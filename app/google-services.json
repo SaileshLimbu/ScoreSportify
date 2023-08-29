@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "833148548783",
+    "project_id": "scoresportify",
+    "storage_bucket": "scoresportify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833148548783:android:f5c5785c6ca4576e14865a",
+        "android_client_info": {
+          "package_name": "com.reachmobi.scoresportify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833148548783-415qg8o66ogk0il21s9rbecuoa0ltfea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeZh0CgnIK_W7tULBOcNvHaBOjCsndSf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833148548783-415qg8o66ogk0il21s9rbecuoa0ltfea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

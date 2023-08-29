@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="player"
+            type="com.reachmobi.scoresportify.models.Player" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    imageFromUrl="@{player.strThumb}"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/player_image"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/ic_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:text="@{player.strPlayer + `, ` + player.strGender}"
+                        android:textColor="@color/black"
+                        android:includeFontPadding="false"
+                        tools:text="Lionel Messi" />
+
+                    <TextView
+                        style="@style/TextViewStyle.Small"
+                        android:text="@{player.strNationality + `, ` + player.strSport}"
+                        android:textColor="@color/gray600"
+                        tools:text="Argentina" />
+
+                    <TextView
+                        style="@style/TextViewStyle.Small"
+                        android:background="@drawable/drawable_search"
+                        android:backgroundTint='@{player.strStatus.equals("Active") ? @color/green : @color/gray500}'
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:text='@{player.strStatus.equals("Active") ? "Active" : "Inactive"}'
+                        android:textColor="@color/white"
+                        tools:text="Active" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

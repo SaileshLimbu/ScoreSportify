@@ -1,0 +1,63 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ScoreSportify" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ScoreSportify" parent="Base.Theme.ScoreSportify" />
+
+    <style name="TextViewStyle" parent="Theme.ScoreSportify">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextViewStyle.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextViewStyle.Normal">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextViewStyle.Large">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="EditText" parent="Theme.ScoreSportify">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray600</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Theme.ScoreSportify">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/gray800</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CardStyle" parent="Theme.ScoreSportify">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">@color/gray700</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_bounce</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+</resources>
