@@ -1,6 +1,7 @@
 # ScoreSportify
 Simple android application with:
 * 100% Kotlin
+* Unit Testing (ViewModel)
 * Retrofit
 * Dagger Hilt (Dependency Injection)
 * MVVM architecture
