@@ -59,7 +59,7 @@ class MainViewModelTest {
     }
 
     @Test
-    fun `searchPlayer with no network should handle error`() = runTest {
+    fun `searchPlayer with no network should handle error`() = runBlocking {
         // Arrange
         `when`(networkConnectivityHelper.isNetworkAvailable()).thenReturn(false)
         val playerName = "Lionel Messi"
